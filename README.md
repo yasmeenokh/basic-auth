@@ -9,7 +9,7 @@ Run the command npm test to test and verify the server and the logger middleware
 Run the command npm run test for testing .
 
 ## Test image : 
-![test](./images/test-lab07.png)
+![test](./images/lab07.png)
 
 ## Run
 Start the server using nodemon/npm start
