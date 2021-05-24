@@ -1,4 +1,11 @@
 # basic-auth
+[The main heroku link](https://yasmeen-basic-auth.herokuapp.com/)
+
+[Pull_Request](https://github.com/yasmeenokh/basic-auth/pull/1)
+
+[The Repo Link](https://github.com/yasmeenokh/basic-auth)
+
+[GitHub Actions](https://github.com/yasmeenokh/basic-auth/actions)
 
 ## Install
 Clone the repository from GitHub
