@@ -6,12 +6,10 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
 const base64 = require('base-64');
-// const mongoose = require('mongoose');
 
 const basicJs = require('./middleware/basic');
 const usersModel = require('../auth/models/users-model');
-const UserManager = require('../middleware/model-finder');
-// const userManager = new UserManager(usersModel);
+// const UserManager = require('../middleware/model-finder');
 const User = require('./models/users-model');
 
 /**
