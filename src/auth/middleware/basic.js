@@ -1,11 +1,7 @@
 'use strict';
 
-// const express = require('express');
 const bcrypt = require('bcrypt');
 const base64 = require('base-64');
-// const mongoose = require('mongoose');
-
-// const UserManager = require('../../middleware/model-finder');
 const usersModel = require('../models/users-model');
 
 async function signIn (request, response, next){
@@ -15,15 +11,6 @@ async function signIn (request, response, next){
     const decoded = base64.decode(encoded);
     const [username, password] = decoded.split(':');
     const user = await usersModel.findOne(request.body);
-    //   const isValid = await bcrypt.compare(password, user.password);
-    //   if(isValid){
-    //     response.json(user);
-    //   } else {
-    //     response.status(401).json({error: 'Invalid password or username'});
-    //   }
-    // } catch (error) {
-    //   next(error);
-    // }
     if (user) {
       const isValid = await bcrypt.compare(password, user.password);
       if (isValid) {

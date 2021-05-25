@@ -23,3 +23,5 @@ Visit http://localhost:PORT at the PORT number you've assigned in your .env
 * https://yasmeen-basic-auth.herokuapp.com/api/v1/signup
 
 ## UML Diagram
+
+![uml](./images/lab06uml.png)
