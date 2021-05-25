@@ -10,7 +10,8 @@ async function signIn (request, response, next){
     const encoded = request.headers.authorization.split(' ')[1];
     const decoded = base64.decode(encoded);
     const [username, password] = decoded.split(':');
-    const user = await usersModel.findOne(request.body);
+    const user = await usersModel.findOne({username});
+    console.log({username});
     if (user) {
       const isValid = await bcrypt.compare(password, user.password);
       if (isValid) {
