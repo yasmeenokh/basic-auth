@@ -9,10 +9,13 @@ const base64 = require('base-64');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
 const cors = require('cors');
-
+const multer = require('multer');
+const multParse = multer();
+app.use(multParse.none());
 /**
  * Requiring the error handlers and the middleware
  */
+
 const errorHandlers = require('./middleware/500');
 const notFoundHandler = require('./middleware/404');
 
